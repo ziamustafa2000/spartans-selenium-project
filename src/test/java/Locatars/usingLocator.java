@@ -22,7 +22,7 @@ public class usingLocator {
         //find the Element
         WebElement searchInputElement = driver.findElement(searchProductName);
         // Preform Action
-        searchInputElement.sendKeys("plug");
+        searchInputElement.sendKeys("tv");
 
         By searchButton = By.id("searchButton");
         WebElement searchButtonElement = driver.findElement(searchButton);
