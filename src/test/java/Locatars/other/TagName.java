@@ -23,11 +23,19 @@ public class TagName {
 
         for (WebElement element : anchorElements) {
             System.out.println(element.getText());
-
+        }
         By imageTag = By.tagName("img");
         List<WebElement> imagesElements = driver.findElements(imageTag);
             System.out.println(imagesElements.size());
 
+        List<WebElement> buttonsElements = driver.findElements(By.tagName("button"));
+            System.out.println(buttonsElements.size());
+
+        for (WebElement element : buttonsElements){
+            String text = element.getText();
+            if(!text.isEmpty())
+                System.out.println(text);
+        }
             driver.quit();
         }
     }

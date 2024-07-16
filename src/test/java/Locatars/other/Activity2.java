@@ -13,7 +13,7 @@ public class Activity2 {
         driver.get("https://google.com/");
         driver.manage().window().maximize();
 
-        driver.findElement(By.name("q")).sendKeys("euro 2024 final score");
+        driver.findElement(By.name("q")).sendKeys("Copa 2024 final");
         driver.findElement(By.name("q")).click();
 
         driver.findElement(By.name("btnK")).click();
