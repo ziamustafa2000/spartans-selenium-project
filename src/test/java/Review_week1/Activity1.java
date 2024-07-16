@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class activity1 {
+public class Activity1 {
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -42,16 +42,19 @@ public class activity1 {
         By confirmPasswordLocator = By.id("passwordInput");
         WebElement confirmPasswordElement = driver.findElement(confirmPasswordLocator);
         confirmPasswordElement.sendKeys("Kabul@Jan123");
+        driver.findElement(By.id("confirmPasswordInput")).sendKeys("Eric@110");
 
         By signUpLocator = By.id("newAccountBtn");
         WebElement signUpElement = driver.findElement(signUpLocator);
         signUpElement.click();
 
-        By loginBtnLocator = By.id("loginBtn");
-        WebElement loginBtnElement = driver.findElement(loginBtnLocator);
-        loginBtnElement.click();
 
-
+        driver.findElement(By.id("signupBtn")).click();
+        Thread.sleep(3000);
+        boolean profilePicture = driver.findElement(By.id("profileImage")).isDisplayed();
+        if (profilePicture) System.out.println("Test Passed...");
+        else System.out.println("Test Failed...");
+        driver.quit();
 
         }
     }
