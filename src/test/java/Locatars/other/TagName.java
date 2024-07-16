@@ -13,7 +13,7 @@ public class TagName {
         System.out.println();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.bbc.com/");
+        driver.get("https://www.tolonews.com/");
 
         By anchorsTagLocator = By.tagName("a");
 
@@ -39,5 +39,3 @@ public class TagName {
             driver.quit();
         }
     }
-
-}
