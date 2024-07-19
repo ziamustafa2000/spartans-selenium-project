@@ -31,11 +31,10 @@ public class Synchronize1 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.cssSelector("#personalPhoneInput")).sendKeys("442202" + i);
         WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
-        //driver.findElement(By.cssSelector("a#accountLink")).click();
+
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.cssSelector("#personalUpdateBtn")).click();
-        //System.out.println("Email: " + email);
         //driver.quit();
         //login__subtitle #loginBtn #accountLink //.account__information-email
         //#personalPhoneInput

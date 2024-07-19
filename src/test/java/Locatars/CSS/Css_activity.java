@@ -24,7 +24,6 @@ public class Css_activity {
         Thread.sleep(1000);
         driver.findElement(By.cssSelector("#accountLink")).click();
         driver.findElement(By.cssSelector(".account__information-email")).getText();
-        System.out.println(text);
         //driver.findElement(By.cssSelector("a#accountLink")).click();
         String email = driver.findElement(By.cssSelector(".account__information-email")).getText();
         System.out.println("Email: " + email);
